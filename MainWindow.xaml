@@ -1,8 +1,19 @@
-﻿<Window x:Class="QuizCollege.MainWindow"
+﻿<Window x:Class="QuizCollegeServer.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
     <Grid>
-        
+        <ListBox Name="txbResultCommand" HorizontalAlignment="Left" Height="197" Margin="377,10,0,0" VerticalAlignment="Top" Width="130"/>
+        <TextBox x:Name="txbPort" HorizontalAlignment="Left" Height="23" Margin="459,286,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="48"/>
+        <ListBox x:Name="lbxClientList" HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="100"/>
+        <RichTextBox x:Name="rtxbReceiveMsg" HorizontalAlignment="Left" Height="100" Margin="140,10,0,0" VerticalAlignment="Top" Width="100">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="10,289,0,0" VerticalAlignment="Top" Width="75" Click="btnStart_Click"/>
+
     </Grid>
 </Window>
